@@ -1,0 +1,103 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb,amsmath} 	% math shit %
+\usepackage{fullpage} 			% 1 inch margins
+\usepackage{parskip} 			% uses spacing instead of indents...
+								% b/t paragraphs
+\usepackage{graphicx} 			% graphics support
+\usepackage{natbib}				% uses natbib bibliography package...
+								% cite using \citep for parenthetical...
+								% cititations
+								% numbers argument generates IEEE cit.s
+\usepackage{sectsty}			% global section styles
+
+\usepackage{enumitem} 			% list customization
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage{longtable}
+
+%\usepackage{float}
+%\floatstyle{boxed}
+%\restylefloat{figure}
+
+\def\bibfont{\footnotesize}
+
+
+\setlength\fboxsep{0pt}
+\setlength\fboxrule{0.5pt}
+
+%\floatstyle{ruled}
+%\newfloat{figure}{thp}{lop}
+%\floatname{figure}{\normalsize Figure}
+
+%\newfloat{table}{thp}{lop}
+%\floatname{table}{Table}
+
+%\usepackage{txfonts}			% times new roman (actually nimbus...
+								% roman no9 L)
+
+
+%\pagestyle{empty} 				% no headers
+%\pagestyle{plain} 				% number in bottom center
+%\pagestyle{headings} 			% section and number in top right
+ \pagestyle{myheadings} 		% number in top right
+
+\setlength{\headsep}{25pt}
+\setlength{\footskip}{0pt}
+\setlength{\itemsep}{10pt}
+
+\newcommand{\pmt}{PM$_{2.5}$}
+\newcommand{\mmm}{\SI{}{\micro\metre}/m$^3$}
+
+\def\bibfont{\small}
+
+
+\usepackage{siunitx}
+
+\allsectionsfont{\normalsize }	% global font size
+
+\usepackage{setspace}
+%	\singlespacing
+%	\onehalfspacing
+ 	\doublespacing
+%	\setstretch{1.1}
+
+\usepackage{lipsum} 			% insert lipsum text using \lipsum
+\setlipsumdefault{1-31} 		% default lipsm paragraphs
+
+\frenchspacing 					% omit extra spacing after periods
+
+\widowpenalty=3000 				% increase widow penalty
+\clubpenalty=3000 				% increase orphan penalty
+
+
+%\usepackage{layout} 			% uncomment for layout debug
+
+\title{Travel Patterns on the San Mateo Peninsula}
+\date{5 September 2013}
+
+\author{Scott Boone}
+
+\begin{document}
+%\raggedright					% comment out for full justification
+\thispagestyle{empty} 			% no page number first page
+Scott Boone  \hfill PLAN 636\\
+Assignment \#1: Travel Pattern Analysis \hfill 5 September 2013\\
+\section{Introduction}
+\lipsum[1-10]
+\section{National Trends}
+\lipsum[2]
+\section{Regional Trends}
+\lipsum[3]~\citep{schrank2007urban}
+\section{Future Trends}
+\lipsum[4]~\citep{pisarski2006commuting}
+
+
+%\clearpage
+\bibliographystyle{chicago}
+
+\bibliography{HW1}
+%\end{multicols}
+%\layout % uncomment for layout debug
+\end{document}
