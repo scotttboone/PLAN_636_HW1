@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+\documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amssymb,amsmath} 	% math shit %
 \usepackage{fullpage} 			% 1 inch margins
@@ -74,25 +74,101 @@
 
 %\usepackage{layout} 			% uncomment for layout debug
 
-\title{Travel Patterns on the San Mateo Peninsula}
-\date{5 September 2013}
 
-\author{Scott Boone}
 
 \begin{document}
 %\raggedright					% comment out for full justification
 \thispagestyle{empty} 			% no page number first page
-Scott Boone  \hfill PLAN 636\\
-Assignment \#1: Travel Pattern Analysis \hfill 5 September 2013\\
-\section{Introduction}
-\lipsum[1-10]
-\section{National Trends}
-\lipsum[2]
-\section{Regional Trends}
-\lipsum[3]~\citep{schrank2007urban}
-\section{Future Trends}
-\lipsum[4]~\citep{pisarski2006commuting}
 
+\textbf{\large MEMORANDUM}\\
+%\noindent\makebox[\linewidth]{\rule{\textwidth}{1pt}} 
+TO: SJ-SF-OAK Metropolitan Planning Organization\\
+RE: Regional Travel: Patterns \& Trends
+\section{Introduction}
+Transportation usage is subject to a number of factors, including changes in population distribution, immigration rates, geography and the economy. The San Jose--San Francisco--Oakland Metropolitan Statistical Area (MSA) is subject to these same factors, often experiencing amplified effects due to the dense and diverse nature of the region. This memo will highlight national and regional transportation trends, and discuss their implications in the context of regional planning efforts. 
+
+\section{National Trends}
+While the baby boom-driven population growth of the 1970s has leveled off, increasing rates of immigration since the early 1990s have proven more than adequate to compensate~\citep{pisarski2006commuting}. The explosive growth of American suburbs over that same period has leveled off in kind, owing to both to shifting racial and ethnic demographics a measured return of residential and commercial activity to city centers. Nine of the ten largest cities in the U.S. are at least a quarter Hispanic~\citep{USACENSUS}, a trend that is likely be maintained, especially in the Southern and Western United States. 
+
+The recession of 2008 has had a significant impact on where Americans live and work, which is still being revealed as census and survey data from that time becomes available. Loss of jobs, homes, and other economic opportunities could be a factor in the near-complete leveling off of annual vehicle miles traveled (Table~\ref{table:VMT}), especially considering the relatively stable population growth over that same period. 
+
+
+
+\begin{table}
+\begin{center}
+ \begin{tabular}{rrr}
+       & USA & SJ-SF-OAK \\
+\cline{2-3}
+ 1995  & 13,479.39 & 11,321.19 \\
+ 2001  & 13,784.93 & 12,107.31 \\
+ 2009  & 12,469.00 & 10,413.80 \\
+ \end{tabular}%
+ \caption{Average Annual Thousand Vehicle Miles of Travel Per Driver~\citep{DOT2009NHTS}.}
+ \label{table:VMT}
+ \end{center}
+\end{table}
+
+
+
+In 2010, the average American still lives in a suburban neighborhood (44\%), travels to work in a car (86\%), and has a commute between 10 and 30 minutes each way (48\%)~\citep{pisarski2006commuting,DOT2009NHTS}.  However, trips by alternative transportation modes are projected to continue to grow at their current rates, resulting in a relative increase compared to single-occupant-motor-vehicle-based lifestyles~\citep{schrank2012urban}. 
+
+
+\section{Regional Trends}
+The factors responsible for these national trends are, in many ways, magnified in the San Jose--San Francisco--Oakland MSA. The region's population is far more ethnically diverse than the United States as a whole, and its robust (though crowded) public transportation system allows workers to avoid its less robust (but equally crowded) highway system. 
+\begin{table}
+\begin{center}
+ \begin{tabular}{rrrrrrr}
+       & USA   & SJ-SF-OAK & NYC-NEW & DAL-FW & HOU  & ATL \\
+\cline{2-7}
+ 2000  & 281,421,906 & 8,153,696 & 18,323,002 & 5,161,544 & 4,715,407 & 4,247,981 \\
+ 2010  & 308,745,538 & 8,370,967 & 18,897,109 & 6,371,773 & 5,946,800 & 5,268,860 \\
+ Percent & 9.7   & 2.7  & 3.1   & 23.4  & 26.1  & 24.0 \\
+ \end{tabular}%
+ \caption{MSA Population growth, 2000--2010~\citep{USACENSUS}.}
+ \label{table:popchange}
+\end{center}
+\end{table}
+
+The Bay Area grew at a substantially slower rate from 2000 to 2010 than the U.S. (Table~\ref{table:popchange}). Even more striking is the meager growth rate as compared to large "Sun Belt" metropolitan areas such as Atlanta or Dallas--Fort Worth. Even though the relatively compact Bay Area lacks, to some degree, the sprawl of those regions, traffic congestion is still a serious issue. Auto commuters in the Bay area can expect to lose 61 hours a year to excessive congestion, compared with 52 in Houston or 45 in Dallas~\citep{schrank2012urban}. The area's polycentric composition and uneven terrain mean that commuters may have to drive through a number of manmade and environmental bottlenecks. As a result, commute times are slightly above the national average (Figure~\ref{fig:commute}).
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=.45]{images/commute_time}
+\caption{Commute time distribution in minutes~\citep{USACENSUS}.}
+\label{fig:commute}
+\end{center}
+\end{figure}
+
+The Bay Area is more diverse than the average U.S. city, a consequence of several centuries of immigration. Since new immigrants are far less likely to drive than their U.S.-born peers~\citep{pisarski2006commuting}. This, coupled with an extremely high population density, supports the area's high but stable public transportation use rates (Table~\ref{table:modes}). 
+
+Expansion of current transportation facilities has proven to be consistently politically and fiscally challenging. The San Francisco Central Subway is on track to cost nearly 1 billion dollars per mile constructed, an indication of the high land values and costly political process. Likewise, the high speed rail network or plans for freeway expansion on the San Jose peninsula are lightning rods for controversy, delay and cost overrun. 
+
+
+\begin{table}
+\begin{center}
+ \begin{tabular}{rrrrrrrrrr}
+\multicolumn{2}{c}{~} & \multicolumn{2}{c}{Car} & &\multicolumn{2}{c}{Bike} & & \multicolumn{2}{c}{Pub. Trans}  \\
+      & & USA   & MSA   &  & USA   & MSA  &  &  USA   & MSA \\
+       \cline{3-4}\cline{6-7}\cline{9-10}
+ 2006 & & 86.72 & 79.15 &  & 0.45  & 1.20 &  &  4.96  & 9.30 \\
+ 2007 & & 86.00 & 78.00 &  & 0.48  & 1.31 &  &  5.01  & 9.96 \\
+ 2008 & & 86.24 & 78.30 &  & 0.55  & 1.55 &  &  5.12  & 9.93 \\
+ 2009 & & 86.15 & 78.11 &  & 0.55  & 1.48 &  &  5.11  & 9.83 \\
+ 2010 & & 86.26 & 78.37 &  & 0.53  & 1.52 &  &  5.05  & 9.80 \\
+ 2011 & & 86.08 & 77.59 &  & 0.56  & 1.82 &  &  5.15  & 9.78 \\
+ \end{tabular}
+ \caption{Selected means of transport for workers years 16 and over as percentage of all categories~\citep{DOT2009NHTS}.}
+ \label{table:modes}. 
+ \end{center}
+\end{table}
+
+Due to these issues, the Bay Area has pursued some alternative, less infrastructure-dependent transportation measures. Consider the steadily-increasing share of bicycle use in the Bay Area, especially compared to the U.S. (Table~\ref{table:modes}). Initiatives such as allowing bicycles on BART during commute hours and the installation of bike-share facilities in San Francisco have been implemented in order to expand both the breadth and depth of bicycle access. 
+
+\section{Future Trends}
+
+While it is easy to characterize the explosive growth of suburbs as a drain from central cities, it is the rural population that has decreased the most. In 1950, 44\% of Americans lived in rural areas, 33\% lived in city centers, and 23\% lived in suburban. By the year 2000, those numbers had shifted to 20\% rural, 30\% urban, and 50\% suburban~\citep{pisarski2006commuting}. This shift represents the emergence of the American Megalopolis---dense suburban areas located not around, but \emph{between} urban cores.
+
+We can expect the following scenario, both in the United States and especially in the Bay Area: a very dense, very diverse, poly-centric region, with limited room for infrastructure expansion due to high land prices, and significant competition with cheaper, less dense metropolitan areas for an increasingly urbanized population. In light of these trends, a successful Bay Area regional transit strategy will focus on linking easily-traversable urban cores with suburbs that have proven to be permanent fixtures in the region.
 
 %\clearpage
 \bibliographystyle{chicago}
